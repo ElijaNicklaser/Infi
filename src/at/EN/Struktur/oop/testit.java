@@ -34,7 +34,9 @@ public class testit {
         //mKatzenListe.add(katze2);
 
         for(Katze k : mKatzenListe){
-            System.out.println("Meine Katze "+k.getName()+" ist "+k.getAlter()+" Jahr alt und richtig "+k.getCharakter());
+            System.out.println("Meine Katze "+k.getName()+" ist "+k.getAlter()+ " Jahr alt und richtig "+ k.getCharakter()+
+                    ". Aber sie ist auch " + k.getFarbe() + " und "+ k.getOberflaechenbeschaffenheit()+".");
+
         }
     }
 }
