@@ -55,4 +55,13 @@ public class Katze {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void getInfo() {
+        System.out.println("Name der Katze: " + this.name +
+                "\nFarbe: " + this.farbe +
+                "\nOberfläche: " +  this.oberflaechenbeschaffenheit +
+                "\nCharakter: " + this.charakter +
+                "\n");
+
+    }
 }

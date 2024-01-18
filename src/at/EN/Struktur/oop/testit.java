@@ -11,7 +11,7 @@ public class testit {
        Katze katze = new Katze();
        String[] charListe ={"gutartig","hinterhältig","Listig","schmusig","lieblich","lustig"};
        String[] oberListe ={"weich","nass","kuschelig","stränig","hart"};
-       String[] nameListe ={"Nussnuggat","Nuggat","Caramell","Schoko","Milky"};
+       String[] nameListe ={"Nussnuggat","Nuggat","Caramell","Schoko","Milky","Haselnuss","Crem","Coco"};
        String[] farbeListe ={"schwarz","grau","weiß","braun","lecker"};
 
        for (int i = 1; i<=100; i++) {
@@ -33,11 +33,20 @@ public class testit {
         //Katze katze2 = new Katze(charListe[0],"nackt",5,"rosa","Nackibuz");
         //mKatzenListe.add(katze2);
 
+
+        Haus haus = new Haus(350, "Buxdhude, 56788 Hamburg",8,5);
+        haus.getInfo();
+
+
         for(Katze k : mKatzenListe){
             System.out.println("Meine Katze "+k.getName()+" ist "+k.getAlter()+ " Jahr alt und richtig "+ k.getCharakter()+
                     ". Aber sie ist auch " + k.getFarbe() + " und "+ k.getOberflaechenbeschaffenheit()+".");
 
+            //katzenzaehler++
+            haus.addKatze(k);
+
         }
+
     }
 }
 
