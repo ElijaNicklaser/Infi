@@ -9,6 +9,7 @@ public class Katze {
 
     public Katze() {
     }
+
     public Katze(String charakter, String oberflaechenbeschaffenheit, int alter, String farbe, String name) {
         this.charakter = charakter;
         this.oberflaechenbeschaffenheit = oberflaechenbeschaffenheit;
@@ -16,6 +17,7 @@ public class Katze {
         this.farbe = farbe;
         this.name = name;
     }
+
     public String getCharakter() {
         return charakter;
     }
@@ -56,12 +58,8 @@ public class Katze {
         this.name = name;
     }
 
-    public void getInfo() {
-        System.out.println("Name der Katze: " + this.name +
-                "\nFarbe: " + this.farbe +
-                "\nOberfläche: " +  this.oberflaechenbeschaffenheit +
-                "\nCharakter: " + this.charakter +
-                "\n");
-
+    public void getInfo (){
+        System.out.println("Name der Katze" + this.name + "Farbe: " + this.farbe + "Oberflaechebeschaffenheit: " +
+                this.oberflaechenbeschaffenheit + "Charakter: " + this.charakter);
     }
 }
